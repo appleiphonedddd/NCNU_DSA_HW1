@@ -1,26 +1,9 @@
-<h1 align="center">
-  <i>Drift-Aware Alignment and Fisher-Weighted Aggregation for Robust Personalized FL</i>
-</h1>
-
-## :mag: Overview
-
 
 ## Contents
-
-- [:mag: Overview](#mag-overview)
 - [Contents](#contents)
-  - [Getting Started](#getting-started)
-        - [Requirements](#requirements)
         - [Installation](#installation)
   - [Deployment](#deployment)
   - [Author](#author)
-
-### Getting Started
-
-
-###### Requirements
-
-- **Operating System**: Ubuntu 24.04.03 LTS (Linux-based)
 
 ###### Installation
 
@@ -39,7 +22,13 @@ conda create --name HW1 python=3.11 -y
 conda activate HW1
 ```
 
-2. Generate the dataset based on the data distribution you personally want to test, for example FashionMNIST
+2.Install PyQt
+
+```sh
+pip install PyQt6
+```
+
+3. Run GUI
 
 ```sh
 python app.py
