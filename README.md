@@ -1,17 +1,9 @@
 
 ## Contents
 - [Contents](#contents)
-        - [Installation](#installation)
   - [Deployment](#deployment)
   - [Author](#author)
 
-###### Installation
-
-1. Install Conda (If you have already installed this command or Anaconda , you can skip this step!!!!)
-
-```sh
-./install_miniconda.sh
-```
 
 ### Deployment
 
