@@ -64,7 +64,6 @@ def run_selectionsort(user_input: str):
     result = ",".join(map(str, arr))
     return process, result
 
-# ---- GUI ----
 class SortApp(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -94,7 +93,6 @@ class SortApp(QMainWindow):
         self.example_btn.clicked.connect(self.fill_example)
         top_bar.addWidget(self.example_btn)
 
-        # 輸入列
         input_row = QHBoxLayout()
         layout.addLayout(input_row)
 
@@ -111,7 +109,6 @@ class SortApp(QMainWindow):
         self.clear_btn.clicked.connect(self.clear_outputs)
         input_row.addWidget(self.clear_btn)
 
-        # 輸出區
         self.process_view = QTextEdit()
         self.process_view.setReadOnly(True)
         self.process_view.setPlaceholderText("Sorting process (original program's print output step by step)")
@@ -124,7 +121,6 @@ class SortApp(QMainWindow):
         layout.addWidget(QLabel("Final Result:"))
         layout.addWidget(self.result_view, stretch=1)
 
-        # 初始提示
         self.on_algo_change(0)
 
     def on_algo_change(self, idx: int):
